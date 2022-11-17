@@ -1,0 +1,23 @@
+.modal {
+    display: block;
+    position: fixed;
+    top: calc(50% - 9rem);
+    width: 27rem;
+    left: calc(50% - 15rem);
+    margin: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #fff;
+    z-index: 1000;
+    border: none;
+}
+.modal > button {
+    background-color: hotpink;
+    cursor: pointer;
+    width: 100%;
+    padding: 24px;
+    color: white;
+}
+
+/* Change CSS later, this is just Omars default styling */

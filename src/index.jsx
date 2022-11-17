@@ -9,6 +9,7 @@ import './style/index.css';
 import Layout from './Pages/Layout/Layout';
 import App from './App';
 import NotFound from './Pages/NotFound/NotFound';
+import SignupLogin from './Pages/SignupLoginLayout/SignupLogin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,11 +18,12 @@ root.render(
 
 <Route path="/" element={<Layout />}>
   <Route index element={<App />}></Route>
+  <Route path="/profile" element={<SignupLogin />}></Route>
   <Route path="*" element={<NotFound />}></Route>
 </Route>
 
 {/* Get /profile and input for signup/signin layout here */}
-<Route></Route>
+
 
 {/* Get everything related to movies here */}
 <Route></Route>
