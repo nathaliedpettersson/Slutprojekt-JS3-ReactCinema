@@ -12,7 +12,7 @@ const goToProfile = () => {
 
   return (
     <>
-  <Button handleClick={goToProfile}btnText={"Add movie"} />
+  <Button handleClick={goToProfile} btnText={"Add movie"} />
     </>
   )
 }
