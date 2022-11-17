@@ -1,8 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import Button from "./Components/Button/Button";
 
 const App = () => {
+
+const navigate = useNavigate();
+
+const goToProfile = () => {
+  navigate("/profile")
+}
+
   return (
     <>
+  <Button handleClick={goToProfile}btnText={"Add movie"} />
     </>
   )
 }

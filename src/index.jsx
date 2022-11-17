@@ -10,6 +10,8 @@ import Layout from './Pages/Layout/Layout';
 import App from './App';
 import NotFound from './Pages/NotFound/NotFound';
 import SignupLogin from './Pages/SignupLoginLayout/SignupLogin';
+import AddMovie from './Pages/AddMovie/AddMovie';
+import DisplayMovie from './Pages/DisplayMovies/DisplayMovies';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,13 +22,12 @@ root.render(
   <Route index element={<App />}></Route>
   <Route path="/profile" element={<SignupLogin />}></Route>
   <Route path="*" element={<NotFound />}></Route>
+
+  <Route path="/movies" element={<DisplayMovie />}></Route>
+  <Route path="/movies/addMovie" element={<AddMovie />}>
 </Route>
 
-{/* Get /profile and input for signup/signin layout here */}
-
-
-{/* Get everything related to movies here */}
-<Route></Route>
+</Route>
 
   </Routes>
   </BrowserRouter>
