@@ -1,0 +1,4 @@
+@import './App.css';
+@import '../Components/Header/_Header.css';
+@import '../Components/Footer/_Footer.css';
+@import '../Components/Modal/_Modal.css';

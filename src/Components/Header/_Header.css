@@ -1,0 +1,10 @@
+.header-template {
+    background-color:lightgray;
+    height: 80px;
+}
+
+img {
+    margin-left: 30px;
+    width: 12vw;
+    height: 12vh;
+}
