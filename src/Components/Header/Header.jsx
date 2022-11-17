@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 
 class Header extends React.Component {
 
@@ -6,6 +7,8 @@ class Header extends React.Component {
         return (
             <header className="header-template">
         <img src="https://gritacademy.se/wp-content/uploads/2021/05/Grit-Academy-logo.png"></img>
+        <NavLink className={"navbar"}to="/">Home</NavLink>
+        <NavLink className={"navbar"}to="/profile">Profile</NavLink>
       </header>
         )
     } 

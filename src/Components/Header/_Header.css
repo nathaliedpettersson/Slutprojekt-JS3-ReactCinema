@@ -8,3 +8,8 @@ img {
     width: 12vw;
     height: 12vh;
 }
+
+.navbar {
+    float: right;
+    margin: 1rem 1rem;
+}

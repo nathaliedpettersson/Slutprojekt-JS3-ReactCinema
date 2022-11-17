@@ -1,9 +1,9 @@
-// navigate to /movies/addMovie
 
 // Fix saving logged in user to 'Auth' key in storage
 
 import React, {useState} from 'react';
 import Modal from '../Modal/Modal';
+import { useNavigate } from 'react-router-dom';
 
 const Login = (props) => {
 
@@ -14,22 +14,21 @@ const Login = (props) => {
 
     const [showModal, setShowModal] = useState(false);
     const [modalMessage, setModalMessage] = useState();
+
+    const navigate = useNavigate();
    
    const submitLogIn = (e) => {
     e.preventDefault();
 
     console.log(userObject);
 
-    // If we find a combination in local storage, we should be navigated to the "/movies" page which should show us the button for "add movie"
-
     const signedUpUsers = JSON.parse(localStorage.getItem('user'));
     console.log(signedUpUsers);
 
     const userExist = signedUpUsers.find((storedUser) => {
         const validUser = userObject.email === storedUser.email && userObject.password === storedUser.password 
-        
-        setShowModal(true)
-        setModalMessage('Login successful.')
+    
+        navigate("/movies/addMovie")
         return validUser
     });
 

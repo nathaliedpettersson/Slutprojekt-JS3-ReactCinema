@@ -19,7 +19,7 @@ root.render(
   <BrowserRouter>
   <Routes>
 
-<Route path="/" element={<Layout />}>
+<Route path="/" element={<Layout /> }>
   <Route index element={<App />}></Route>
   <Route path="/profile" element={<SignupLogin />}></Route>
   <Route path="*" element={<NotFound />}></Route>

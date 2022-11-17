@@ -1,7 +1,3 @@
-// Import from addmovie file 
-
-// Navigate to /movies after submitting movie form
-
 import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -14,10 +10,12 @@ const AddMovie = () => {
 
     const navigate = useNavigate();
 
+    const defaultImg = 'https://img.freepik.com/premium-vector/cinema-movie-background-popcorn-filmstrip-clapboard-tickets-movie-time-background_41737-248.jpg';
+
     // Movieobject to be sent to localstorage so that we can get access to it in rendermovie
     const movieObject = {
         title: '',
-        img: '',
+        img: '' || defaultImg,
         summary: '',
         longDesc: ''
     }
@@ -30,7 +28,6 @@ const AddMovie = () => {
 
         console.log(movieObject);
 
-        // Navigating to rendermovie after submitting a movie
         navigate("/movies");
     }
 
@@ -39,7 +36,7 @@ const AddMovie = () => {
      <div>
         <form onSubmit={(e) => submitNewMovie(e)}>
             <input type="text" placeholder="Title" onChange={(e) => movieObject.title = e.target.value}/>
-            <input type="text" placeholder="Url for img" onChange={(e) => movieObject.img = e.target.value}/>
+            <input type="url" placeholder="Url (optional)" onChange={(e) => movieObject.img = e.target.value}/>
             <input type="text" placeholder="Short summary" onChange={(e) => movieObject.summary = e.target.value}/>
             <input type="text" placeholder="Long desc" onChange={(e) => movieObject.longDesc = e.target.value}/>
             <input type="submit" value="Add movie"/>

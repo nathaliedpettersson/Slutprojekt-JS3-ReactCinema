@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Components/Button/Button";
+import DisplayMovie from "./Pages/DisplayMovies/DisplayMovies";
 
 const App = () => {
 
@@ -13,10 +14,9 @@ const goToProfile = () => {
   return (
     <>
   <Button handleClick={goToProfile} btnText={"Add movie"} />
+  <DisplayMovie />
     </>
   )
 }
 
 export default App;
-
-// Have link on profile-text and button for "add movies" in here that will both navigate to /profile
