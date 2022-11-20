@@ -1,0 +1,13 @@
+.component-btn {
+    border: none;
+    padding: 0.7rem 1.2rem;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.component-btn:hover {
+    background-color: #FBACBE;
+}

@@ -14,9 +14,9 @@ const MovieItem = () => {
     }
 
     return (
-        <div>
-            <h1>{location.state.movie.title}</h1>
-            <img src={location.state.movie.img} alt="Movie item-image"></img>
+        <div className="movie-item">
+            <h1 className="item-title">{location.state.movie.title}</h1>
+            <img className="movieitem-img" src={location.state.movie.img} alt="Movie item-image"></img>
             <p>{location.state.movie.longDesc}</p>
 
             <Button handleClick={displayMovies} btnText={'Go back'}/>

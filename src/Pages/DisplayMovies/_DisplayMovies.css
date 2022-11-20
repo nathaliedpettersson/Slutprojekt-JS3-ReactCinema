@@ -1,0 +1,39 @@
+.display-movies {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+li {
+    border: 3px solid white;
+    text-align: center;
+    margin: 0.5rem 1rem;
+    padding: 0rem 3rem;
+    flex: 1 1 0;
+}
+
+.movie-title {
+    color: #6FEDB7;
+}
+
+.movie-summary {
+    color: white;
+}
+
+.movies-img {
+    margin: 0;
+    width: 13vw;
+    height: 15vh;
+}
+
+.readmore-btn {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    background-color: #1C0B19;
+    color: white;
+    cursor: pointer;
+}

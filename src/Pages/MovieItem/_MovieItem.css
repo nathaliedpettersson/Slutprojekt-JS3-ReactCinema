@@ -1,0 +1,14 @@
+.movie-item {
+    color: white;
+    text-align: center;
+}
+
+.item-title {
+    color: #4EA699;
+}
+
+.movieitem-img {
+    width: 25vw;
+    height: 28vh;
+}
+

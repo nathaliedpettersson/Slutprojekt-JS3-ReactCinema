@@ -23,15 +23,15 @@ const DisplayMovie = () => {
     // Mapping through getMovies to get value from localstorage and show it in DOM
 
     return (
-        <div>
-            <ul>
+        <div className="display-movie-container">
+            <ul className="display-movies">
                 {getMovies.map((movie, index) => {
                     return (
                     <li key={index}>
-                        <h3>{movie.title}</h3>
-                        <img src={movie.img} alt="Movie image"></img>
-                        <p>{movie.summary}</p>
-                        <button onClick={() => displayMovieItem(movie)}>Read more</button>
+                        <h3 className="movie-title">{movie.title}</h3>
+                        <img className="movies-img" src={movie.img} alt="Movie image"></img>
+                        <p className="movie-summary">{movie.summary}</p>
+                        <button className="readmore-btn" onClick={() => displayMovieItem(movie)}>Read more</button>
                     </li>
                     )
                     
