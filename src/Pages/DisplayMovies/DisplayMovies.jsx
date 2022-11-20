@@ -29,7 +29,7 @@ const DisplayMovie = () => {
                     return (
                     <li key={index}>
                         <h3>{movie.title}</h3>
-                        <img src={movie.img}></img>
+                        <img src={movie.img} alt="Movie image"></img>
                         <p>{movie.summary}</p>
                         <button onClick={() => displayMovieItem(movie)}>Read more</button>
                     </li>

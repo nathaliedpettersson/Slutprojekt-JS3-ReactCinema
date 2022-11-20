@@ -2,3 +2,6 @@
 @import '../Components/Header/_Header.css';
 @import '../Components/Footer/_Footer.css';
 @import '../Components/Modal/_Modal.css';
+@import '../Components//Button/_Button.css';
+@import '../Components/SignUp/_SignUp.css';
+@import '../Components/Login/_Login.css';

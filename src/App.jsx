@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Components/Button/Button";
-import DisplayMovie from "./Pages/DisplayMovies/DisplayMovies";
+// import DisplayMovie from "./Pages/DisplayMovies/DisplayMovies";
 
 const App = () => {
 
@@ -14,7 +14,7 @@ const goToProfile = () => {
   return (
     <>
   <Button handleClick={goToProfile} btnText={"Add movie"} />
-  <DisplayMovie />
+  {/* <DisplayMovie /> */}
     </>
   )
 }
