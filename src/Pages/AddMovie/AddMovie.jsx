@@ -12,7 +12,7 @@ const AddMovie = () => {
 
     const defaultImg = 'https://img.freepik.com/premium-vector/cinema-movie-background-popcorn-filmstrip-clapboard-tickets-movie-time-background_41737-248.jpg';
 
-    // Movieobject to be sent to localstorage so that we can get access to it in rendermovie
+    // Movieobject to be sent to localstorage so that we can get access to it in display movies
     const movieObject = {
         title: '',
         img: '' || defaultImg,

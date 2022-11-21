@@ -28,13 +28,17 @@ const Login = (props) => {
         const userExist = signedUpUsers.find((storedUser) => {
             const validEmail = userObject.email === storedUser.email;
             const validPassword = userObject.password === storedUser.password;
+            
+            // Save current logged in user to localstorage
+            localStorage.setItem('authorized', storedUser.email);
+            
             return validEmail && validPassword;
-
         });
 
         if (userExist) {
             console.log('Login successfull.')
             navigate("/movies/addMovie")
+
 
         } else {
             console.log('Login failed.')
