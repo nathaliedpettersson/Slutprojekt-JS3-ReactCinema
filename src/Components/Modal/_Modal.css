@@ -13,11 +13,9 @@
     border: none;
 }
 .modal > button {
-    background-color: hotpink;
+    background-color: #cfd7f2;
     cursor: pointer;
     width: 100%;
     padding: 24px;
-    color: white;
+    color: black;
 }
-
-/* Change CSS later, this is just Omars default styling */

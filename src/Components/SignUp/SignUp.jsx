@@ -51,14 +51,15 @@ export default class SignUp extends React.Component {
 
     render() {
         return (
-            <>
+            <div className="form-container">
+                <h3 className="form-header">New here? Sign up and join the cinema!</h3>
                 <form onSubmit={this.handleOnSubmit}>
                     <input type="email" placeholder="Email" value={this.state.email} onChange={this.onChangeEmail} />
                     <input type="password" placeholder="Password" value={this.state.password} onChange={this.onChangePassword} />
-                    <input type="submit" value="Sign up" />
+                    <input className="submit-btn" type="submit" value="Sign up" />
                 </form>
                 <Modal show={this.state.showModal} modalMessage={this.state.modalMessage} handleClick={this.hideModal}></Modal>
-            </>
+            </div>
         )
     }
 }
