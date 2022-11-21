@@ -9,3 +9,12 @@ body {
 .notfound-page {
     color: red;
 }
+
+.main-page {
+    display: flex;
+    justify-content: center;
+}
+
+.main-page-header {
+    color: #FBFACD;
+}

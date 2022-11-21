@@ -12,10 +12,11 @@ const goToProfile = () => {
 }
 
   return (
-    <>
+    <div className="main-page">
+      <h1 className="main-page-header">CINEMA APP REACT</h1>
   <Button handleClick={goToProfile} btnText={"Add movie"} />
   {/* <DisplayMovie /> */}
-    </>
+    </div>
   )
 }
 

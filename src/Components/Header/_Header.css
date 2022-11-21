@@ -14,4 +14,9 @@ img {
     margin: 1rem 1rem;
     text-decoration: none;
     color: white;
+    padding: 0.5rem 0.5rem;
+}
+
+.navbar:hover {
+    border: 1px solid white;
 }
