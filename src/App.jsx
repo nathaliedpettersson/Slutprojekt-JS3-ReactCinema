@@ -5,17 +5,17 @@ import Button from "./Components/Button/Button";
 
 const App = () => {
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const goToProfile = () => {
-  navigate("/profile")
-}
+  const goToProfile = () => {
+    navigate("/profile")
+  }
 
   return (
     <div className="main-page">
       <h1 className="main-page-header">CINEMA APP REACT</h1>
-  <Button handleClick={goToProfile} btnText={"Add movie"} />
-  {/* <DisplayMovie /> */}
+      <Button handleClick={goToProfile} btnText={"Add movie"} />
+      {/* <DisplayMovie /> */}
     </div>
   )
 }

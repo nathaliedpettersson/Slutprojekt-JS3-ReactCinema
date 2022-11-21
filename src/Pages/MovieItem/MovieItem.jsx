@@ -19,7 +19,7 @@ const MovieItem = () => {
             <img className="movieitem-img" src={location.state.movie.img} alt="Movie item-image"></img>
             <p>{location.state.movie.longDesc}</p>
 
-            <Button handleClick={displayMovies} btnText={'Go back'}/>
+            <Button handleClick={displayMovies} btnText={'Go back'} />
         </div>
     )
 }

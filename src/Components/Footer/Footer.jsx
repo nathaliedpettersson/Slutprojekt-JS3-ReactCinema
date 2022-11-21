@@ -2,10 +2,10 @@ import React from "react";
 
 class Footer extends React.Component {
     render() {
-        return(
+        return (
             <footer className="footer-template">
-           <p>Copyright by Cinema for NDP Apps</p>
-          </footer>
+                <p>Copyright by Cinema for NDP Apps</p>
+            </footer>
         )
     }
 }

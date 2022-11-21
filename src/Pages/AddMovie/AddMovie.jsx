@@ -6,7 +6,7 @@ const AddMovie = () => {
 
     // Using useState to get movies from localstorage or create an empty array if it doesn't exist
     const [movies, setMovies] = useState(localStorage.getItem("movies")
-    ? JSON.parse(localStorage.getItem("movies")) : []);
+        ? JSON.parse(localStorage.getItem("movies")) : []);
 
     const navigate = useNavigate();
 
@@ -33,17 +33,17 @@ const AddMovie = () => {
 
 
     return (
-     <div>
-        <form onSubmit={(e) => submitNewMovie(e)}>
-            <input type="text" placeholder="Title" onChange={(e) => movieObject.title = e.target.value}/>
-            <input type="url" placeholder="Url (optional)" onChange={(e) => movieObject.img = e.target.value}/>
-            <input type="text" placeholder="Short summary" onChange={(e) => movieObject.summary = e.target.value}/>
-            <input type="text" placeholder="Long desc" onChange={(e) => movieObject.longDesc = e.target.value}/>
-            <input type="submit" value="Add movie"/>
-        </form>
-     </div>
+        <div>
+            <form onSubmit={(e) => submitNewMovie(e)}>
+                <input type="text" placeholder="Title" onChange={(e) => movieObject.title = e.target.value} />
+                <input type="url" placeholder="Url (optional)" onChange={(e) => movieObject.img = e.target.value} />
+                <input type="text" placeholder="Short summary" onChange={(e) => movieObject.summary = e.target.value} />
+                <input type="text" placeholder="Long desc" onChange={(e) => movieObject.longDesc = e.target.value} />
+                <input type="submit" value="Add movie" />
+            </form>
+        </div>
 
-    
+
     )
 }
 

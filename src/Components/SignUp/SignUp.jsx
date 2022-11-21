@@ -30,24 +30,24 @@ export default class SignUp extends React.Component {
 
         const isEmailValid = usersInStorage.find((storedEmail) => {
             const emailExist = this.state.email === storedEmail.email
-          
-            this.setState({showModal: true, modalMessage: 'Choose other email address.'})
+
+            this.setState({ showModal: true, modalMessage: 'Choose other email address.' })
             return emailExist
         });
 
         if (!isEmailValid) {
-            
+
             usersInStorage.push(this.state)
             localStorage.setItem('user', JSON.stringify(usersInStorage));
 
-            this.setState({showModal: true, modalMessage: 'Welcome! You are signed up.'})
+            this.setState({ showModal: true, modalMessage: 'Welcome! You are signed up.' })
         }
 
     }
 
     hideModal = () => {
         this.setState({ showModal: false });
-      };
+    };
 
     render() {
         return (

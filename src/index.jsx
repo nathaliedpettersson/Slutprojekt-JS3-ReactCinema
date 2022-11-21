@@ -17,20 +17,20 @@ import MovieItem from './Pages/MovieItem/MovieItem';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <Routes>
+    <Routes>
 
-<Route path="/" element={<Layout /> }>
-  <Route index element={<App />}></Route>
-  <Route path="/profile" element={<SignupLogin />}></Route>
-  <Route path="*" element={<NotFound />}></Route>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<App />}></Route>
+        <Route path="/profile" element={<SignupLogin />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
 
-  <Route path="/movies" element={<DisplayMovie />}></Route>
-  <Route path="/movies/addMovie" element={<AddMovie />}></Route>
-  <Route path="/movies/:title" element={<MovieItem />}></Route>
+        <Route path="/movies" element={<DisplayMovie />}></Route>
+        <Route path="/movies/addMovie" element={<AddMovie />}></Route>
+        <Route path="/movies/:title" element={<MovieItem />}></Route>
 
-</Route>
+      </Route>
 
-  </Routes>
+    </Routes>
   </BrowserRouter>
 );
 

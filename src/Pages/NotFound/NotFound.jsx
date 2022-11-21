@@ -9,5 +9,3 @@ const NotFound = () => {
 }
 
 export default NotFound;
-
-// create simple error-page with message to user and also a button that navigates back to /

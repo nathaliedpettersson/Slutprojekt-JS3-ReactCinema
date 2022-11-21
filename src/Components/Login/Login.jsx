@@ -1,6 +1,3 @@
-
-// Fix saving logged in user to 'Auth' key in storage
-
 import React, { useState } from 'react';
 import Modal from '../Modal/Modal';
 import { useNavigate } from 'react-router-dom';
@@ -12,26 +9,30 @@ const Login = (props) => {
         password: ""
     }
 
+    // Set state for Modal
     const [showModal, setShowModal] = useState(false);
     const [modalMessage, setModalMessage] = useState();
 
     const navigate = useNavigate();
 
+    // On form submit
     const submitLogIn = (e) => {
         e.preventDefault();
 
         console.log(userObject);
 
+        // Get all users
         const signedUpUsers = JSON.parse(localStorage.getItem('user'));
         console.log(signedUpUsers);
 
+        // Check if login-values matches a user in localStorage
         const userExist = signedUpUsers.find((storedUser) => {
             const validEmail = userObject.email === storedUser.email;
             const validPassword = userObject.password === storedUser.password;
-            
+
             // Save current logged in user to localstorage
-            localStorage.setItem('authorized', storedUser.email);
-            
+            localStorage.setItem('Authorized', storedUser.email);
+
             return validEmail && validPassword;
         });
 
@@ -39,13 +40,11 @@ const Login = (props) => {
             console.log('Login successfull.')
             navigate("/movies/addMovie")
 
-
         } else {
             console.log('Login failed.')
             setShowModal(true)
             setModalMessage('Seems like you are not signed up yet? Or you wrote the wrong combination.')
         }
-
     };
 
     const hideLoginModal = () => {
