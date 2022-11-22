@@ -11,7 +11,7 @@ const App = () => {
     navigate("/profile")
   }
 
-  const displayMovies = localStorage.getItem("movies") ? JSON.parse(localStorage.getItem("movies")) : null;
+  // const displayMovies = localStorage.getItem("movies") ? JSON.parse(localStorage.getItem("movies")) : null;
 
   return (
     <div className="main-page">
@@ -21,7 +21,7 @@ const App = () => {
       </div>
        {/* <DisplayMovie />  */}
 
-    <div className="display-movie-app-container">
+    {/* <div className="display-movie-app-container">
     <ul className="display-movies-app">
       {displayMovies.map((movie, index) => {
         return (
@@ -33,7 +33,7 @@ const App = () => {
         )
       })}
     </ul>
-    </div>
+    </div> */}
     </div>
   )
 }
