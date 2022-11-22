@@ -1,0 +1,7 @@
+.add-movie-btn {
+    cursor: pointer;
+}
+
+.add-movie-btn:hover {
+    color: white;
+}

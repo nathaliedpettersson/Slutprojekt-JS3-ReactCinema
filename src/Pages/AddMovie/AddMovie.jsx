@@ -38,8 +38,8 @@ const AddMovie = () => {
                 <input type="text" placeholder="Title" onChange={(e) => movieObject.title = e.target.value} />
                 <input type="url" placeholder="Url (optional)" onChange={(e) => movieObject.img = e.target.value} />
                 <input type="text" placeholder="Short summary" onChange={(e) => movieObject.summary = e.target.value} />
-                <input type="text" placeholder="Long desc" onChange={(e) => movieObject.longDesc = e.target.value} />
-                <input type="submit" value="Add movie" />
+                <input type="text" placeholder="Description" onChange={(e) => movieObject.longDesc = e.target.value} />
+                <input className="add-movie-btn" type="submit" value="Add movie" />
             </form>
         </div>
 

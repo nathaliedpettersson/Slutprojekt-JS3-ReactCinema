@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Components/Button/Button";
-// import DisplayMovie from "./Pages/DisplayMovies/DisplayMovies";
 
 const App = () => {
 
@@ -11,7 +10,7 @@ const App = () => {
     navigate("/profile")
   }
 
-  // const displayMovies = localStorage.getItem("movies") ? JSON.parse(localStorage.getItem("movies")) : null;
+  const displayMovies = localStorage.getItem("movies") ? JSON.parse(localStorage.getItem("movies")) : [];
 
   return (
     <div className="main-page">
@@ -19,9 +18,8 @@ const App = () => {
       <div className="btn-wrapper">
       <Button handleClick={goToProfile} btnText={"Add movie"} />
       </div>
-       {/* <DisplayMovie />  */}
-
-    {/* <div className="display-movie-app-container">
+ 
+    <div className="display-movie-app-container">
     <ul className="display-movies-app">
       {displayMovies.map((movie, index) => {
         return (
@@ -33,7 +31,7 @@ const App = () => {
         )
       })}
     </ul>
-    </div> */}
+    </div>
     </div>
   )
 }
