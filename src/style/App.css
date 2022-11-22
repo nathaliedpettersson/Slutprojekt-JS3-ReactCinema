@@ -13,8 +13,31 @@ body {
 .main-page {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .main-page-header {
     color: #FBFACD;
+    text-align: center;
+}
+
+.btn-wrapper {
+    margin: 0 33%;
+    text-align: center;
+}
+
+.display-movie-app-container {
+    margin: 0 33%;
+}
+
+.display-movies-app {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+
+.movies-img-app {
+    width: 15vw;
+    height: 20vh;
 }
