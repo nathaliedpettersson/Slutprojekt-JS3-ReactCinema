@@ -21,17 +21,19 @@ const DisplayMovie = () => {
     const userLoggedIn = localStorage.getItem('Authorized');
 
     const removeItem = (index) => {
-        const movieIndex = getMovies.filter((movie) => movie.title !== index);
-        localStorage.setItem("movies", JSON.stringify(movieIndex));
+        const deleteMovie = getMovies.filter((movie) => movie.title !== index);
+        localStorage.setItem("movies", JSON.stringify(deleteMovie));
+
+        window.location.reload();
     }
 
     // Mapping through getMovies to get value from localstorage and show it in DOM
     return (
         <div className="display-movie-container">
             <ul className="display-movies">
-                {getMovies.map((movie, index) => {
+                {getMovies.map((movie) => {
                     return (
-                        <li key={index}>
+                        <li key={movie.title}>
                             <h2>Added by: {movie.user}</h2>
                             <h3 className="movie-title">{movie.title}</h3>
                             <img className="movies-img" src={movie.img} alt="Movie image"></img>
@@ -39,7 +41,7 @@ const DisplayMovie = () => {
                             <button className="readmore-btn" onClick={() => displayMovieItem(movie)}>Read more</button>
 
                             {userLoggedIn === movie.user && (
-                                <button onClick={() => removeItem(index)}>X</button>
+                                <button className="remove-btn" onClick={() => removeItem(movie.title)}>X</button>
                             )}
                         </li>
                     )
