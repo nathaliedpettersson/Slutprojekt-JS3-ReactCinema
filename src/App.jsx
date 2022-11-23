@@ -24,7 +24,7 @@ const App = () => {
       {displayMovies.map((movie, index) => {
         return (
           <li key={index}>
-            <h3>{movie.title}</h3>
+            <h3 className="movie-title-app">{movie.title}</h3>
           <img className="movies-img-app" src={movie.img} alt="Movie img"></img>
           <p>{movie.summary}</p>
           </li>

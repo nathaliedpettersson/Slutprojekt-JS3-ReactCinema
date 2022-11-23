@@ -17,7 +17,6 @@ const DisplayMovie = () => {
         navigate("/movies/" + movie.title, { state: { movie } })
     }
 
-    // Keep working on this!
     const userLoggedIn = localStorage.getItem('Authorized');
 
     const removeItem = (index) => {
@@ -34,7 +33,7 @@ const DisplayMovie = () => {
                 {getMovies.map((movie) => {
                     return (
                         <li key={movie.title}>
-                            <h2>Added by: {movie.user}</h2>
+                            <h3 className="movie-user">Added by: {movie.user}</h3>
                             <h3 className="movie-title">{movie.title}</h3>
                             <img className="movies-img" src={movie.img} alt="Movie image"></img>
                             <p className="movie-summary">{movie.summary}</p>

@@ -27,6 +27,10 @@ body {
     text-align: center;
 }
 
+.movie-title-app {
+    text-transform: uppercase;
+}
+
 .display-movie-app-container {
     margin: 0 33%;
 }
