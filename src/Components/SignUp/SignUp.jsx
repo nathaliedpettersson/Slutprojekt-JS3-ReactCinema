@@ -41,6 +41,9 @@ export default class SignUp extends React.Component {
             localStorage.setItem('user', JSON.stringify(usersInStorage));
 
             this.setState({ showModal: true, modalMessage: 'Welcome! You are signed up.' })
+
+            this.state.email = '';
+            this.state.password = '';
         }
 
     }
