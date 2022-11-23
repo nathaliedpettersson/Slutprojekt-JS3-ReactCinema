@@ -17,12 +17,17 @@ const AddMovie = () => {
         title: '',
         img: '' || defaultImg,
         summary: '',
-        longDesc: ''
+        longDesc: '',
+        user: ''
     }
 
     // We set movieobject to movie array and save it in state and then also set the new item to localstorage
     const submitNewMovie = (e) => {
         e.preventDefault();
+
+        const loggedInUser = localStorage.getItem('Authorized');
+        movieObject.user = loggedInUser;
+
         setMovies([...movies, movieObject])
         localStorage.setItem("movies", JSON.stringify([...movies, movieObject]));
 
