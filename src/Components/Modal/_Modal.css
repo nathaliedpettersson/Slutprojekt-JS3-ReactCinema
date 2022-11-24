@@ -13,9 +13,12 @@
     border: none;
 }
 .modal > button {
-    background-color: #cfd7f2;
+    background-color: #879bde;
     cursor: pointer;
     width: 100%;
     padding: 24px;
     color: black;
+    border: none;
+    text-transform: uppercase;
 }
+

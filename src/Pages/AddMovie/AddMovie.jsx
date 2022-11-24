@@ -38,12 +38,15 @@ const AddMovie = () => {
 
 
     return (
-        <div>
+        <div className="add-movie-container">
+            <h3 className="add-movie-header">You're in! Add movies and get inspo from other users, it'll be fun.</h3>
             <form onSubmit={(e) => submitNewMovie(e)}>
-                <input type="text" placeholder="Title" onChange={(e) => movieObject.title = e.target.value} />
-                <input type="url" placeholder="Url (optional)" onChange={(e) => movieObject.img = e.target.value} />
-                <input type="text" placeholder="Short summary" onChange={(e) => movieObject.summary = e.target.value} />
-                <input type="text" placeholder="Description" onChange={(e) => movieObject.longDesc = e.target.value} />
+                <input className="add-movie-input"type="text" placeholder="Title" onChange={(e) => movieObject.title = e.target.value} />
+                <input className="add-movie-input" type="url" placeholder="Url (optional)" onChange={(e) => movieObject.img = e.target.value} />
+                <input className="add-movie-input" type="text" placeholder="Short summary" onChange={(e) => movieObject.summary = e.target.value} />
+                <input className="add-movie-input" type="text" placeholder="Description" onChange={(e) => movieObject.longDesc = e.target.value} />
+                <br></br>
+                <br></br>
                 <input className="add-movie-btn" type="submit" value="Add movie" />
             </form>
         </div>

@@ -29,6 +29,11 @@ body {
 
 .movie-title-app {
     text-transform: uppercase;
+    color: #D8D8F6;
+}
+
+.movie-summary-app {
+    color: #FBFACD;
 }
 
 .display-movie-app-container {
@@ -38,10 +43,12 @@ body {
 .display-movies-app {
     list-style-type: none;
     padding: 0;
-    color: white;
 }
 
 .movies-img-app {
     width: 15vw;
     height: 20vh;
 }
+
+
+
