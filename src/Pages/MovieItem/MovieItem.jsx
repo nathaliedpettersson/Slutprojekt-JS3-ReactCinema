@@ -7,8 +7,6 @@ const MovieItem = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    console.log(location);
-
     const displayMovies = () => {
         navigate(-1)
     }

@@ -17,8 +17,8 @@ li {
 }
 
 .movie-user {
-color: white;
-text-transform: uppercase;
+    color: white;
+    text-transform: uppercase;
 }
 
 .movie-title {
@@ -59,4 +59,3 @@ text-transform: uppercase;
     background-color: red;
     border: none;
 }
-

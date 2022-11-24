@@ -27,7 +27,6 @@ root.render(
         <Route path="/movies" element={<DisplayMovie />}></Route>
         <Route path="/movies/addMovie" element={<AddMovie />}></Route>
         <Route path="/movies/:title" element={<MovieItem />}></Route>
-
       </Route>
 
     </Routes>

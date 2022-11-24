@@ -1,6 +1,5 @@
 import React from 'react';
 import Modal from '../Modal/Modal';
-
 export default class SignUp extends React.Component {
 
     constructor(props) {
@@ -21,25 +20,23 @@ export default class SignUp extends React.Component {
         this.setState({ password: e.target.value })
     }
 
+    // On form submit
     handleOnSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state.email, this.state.password);
-
         const usersInStorage = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : [];
-        console.log(usersInStorage);
 
+        // Check if new email is unique    
         const isEmailValid = usersInStorage.find((storedEmail) => {
             const emailExist = this.state.email === storedEmail.email
-
             this.setState({ showModal: true, modalMessage: 'Choose other email address.' })
             return emailExist
         });
 
+        // Push new user to array of users on success    
         if (!isEmailValid) {
 
             usersInStorage.push(this.state)
             localStorage.setItem('user', JSON.stringify(usersInStorage));
-
             this.setState({ showModal: true, modalMessage: 'Welcome! You are signed up.' })
 
             this.state.email = '';

@@ -4,7 +4,7 @@ import Button from "../../Components/Button/Button";
 
 const DisplayMovie = () => {
 
-    // Get movies from localstorage
+    // Get movies from localStorage
     const getMovies = JSON.parse(localStorage.getItem("movies"));
 
     const navigate = useNavigate();
@@ -19,6 +19,7 @@ const DisplayMovie = () => {
 
     const userLoggedIn = localStorage.getItem('Authorized');
 
+    // Delete specific movie if logged in user matches user in movieObject
     const removeItem = (index) => {
         const deleteMovie = getMovies.filter((movie) => movie.title !== index);
         localStorage.setItem("movies", JSON.stringify(deleteMovie));
@@ -26,7 +27,7 @@ const DisplayMovie = () => {
         window.location.reload();
     }
 
-    // Mapping through getMovies to get value from localstorage and show it in DOM
+    // Mapping through getMovies to get value from localstorage and show in DOM
     return (
         <div className="display-movie-container">
             <ul className="display-movies">

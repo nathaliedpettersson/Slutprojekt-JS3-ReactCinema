@@ -19,29 +19,23 @@ const Login = (props) => {
     const submitLogIn = (e) => {
         e.preventDefault();
 
-        console.log(userObject);
-
         // Get all users
         const signedUpUsers = JSON.parse(localStorage.getItem('user'));
-        console.log(signedUpUsers);
 
         // Check if login-values matches a user in localStorage
         const userExist = signedUpUsers.find((storedUser) => {
             const validEmail = userObject.email === storedUser.email;
             const validPassword = userObject.password === storedUser.password;
 
-            // Save current logged in user to localstorage
+            // Save current logged in user to localStorage
             localStorage.setItem('Authorized', storedUser.email);
-
             return validEmail && validPassword;
         });
 
         if (userExist) {
-            console.log('Login successfull.')
             navigate("/movies/addMovie")
 
         } else {
-            console.log('Login failed.')
             setShowModal(true)
             setModalMessage('Seems like you are not signed up yet? Or you wrote the wrong combination.')
         }
