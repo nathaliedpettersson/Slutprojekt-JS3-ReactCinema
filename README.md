@@ -11,3 +11,7 @@ Project is developed in React and JavaScript and the following is implemented:
 - LocalStorage
 - Props
 - Events
+
+### Left to do:
+
+- Improve styling as functionality was prioritized when creating and handing in project for school
