@@ -3,15 +3,15 @@ import { useNavigate } from "react-router-dom";
 import Button from "./Components/Button/Button";
 
 const App = () => {
-
   const navigate = useNavigate();
 
   const goToProfile = () => {
-    navigate("/profile")
-  }
+    navigate("/profile");
+  };
 
-  // Get movies from localStorage and render only necessary info for "/"-page
-  const displayMovies = localStorage.getItem("movies") ? JSON.parse(localStorage.getItem("movies")) : [];
+  const displayMovies = localStorage.getItem("movies")
+    ? JSON.parse(localStorage.getItem("movies"))
+    : [];
 
   return (
     <div className="main-page">
@@ -25,15 +25,19 @@ const App = () => {
             return (
               <li key={index}>
                 <h3 className="movie-title-app">{movie.title}</h3>
-                <img className="movies-img-app" src={movie.img} alt="Movie img"></img>
+                <img
+                  className="movies-img-app"
+                  src={movie.img}
+                  alt="Movie img"
+                ></img>
                 <p className="movie-summary-app">{movie.summary}</p>
               </li>
-            )
+            );
           })}
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default App;
