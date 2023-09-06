@@ -14,7 +14,7 @@
 input {
     padding: 0.2rem 0.7rem;
     margin: 0.2rem;
-    background-color: #7C90DB;
+    background-color: #5C8374;
     border: none;
 }
 
@@ -29,7 +29,6 @@ input[type=text]:focus {
 .submit-btn {
     border: none;
     cursor: pointer;
-    background-color: #7C90DB;
     padding: 0.3rem 0.8rem;
     border-radius: 3px;
     color: white;

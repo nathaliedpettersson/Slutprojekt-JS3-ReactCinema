@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className="main-page">
-      <h1 className="main-page-header">&#128253; CINEMA APP REACT &#128253;</h1>
+      <h1 className="main-page-header">CINEMA APP REACT</h1>
       <div className="btn-wrapper">
         <Button handleClick={goToProfile} btnText={"Add movie"} />
       </div>
