@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: auto;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #040D12;
 }
 
@@ -28,11 +28,11 @@ body {
 
 .movie-title-app {
     text-transform: uppercase;
-    color: #D8D8F6;
+    color: white;
 }
 
 .movie-summary-app {
-    color: #FBFACD;
+    color: white;
 }
 
 .display-movie-app-container {
@@ -48,6 +48,3 @@ body {
     width: 15vw;
     height: 20vh;
 }
-
-
-

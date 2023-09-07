@@ -1,23 +1,35 @@
-.add-movie-container {
+.add-movie-background {
+    background: url(cinema.png);
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
-.add-movie-header {
-    color: white;
-    text-transform: uppercase;
+.add-movie-container {
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    margin-top: 5rem;
+}
+
+form {
+    text-align: center;
 }
 
 .add-movie-input {
     padding: 0.5rem 1rem;
 }
 
+.add-movie-input:first-child {
+    margin-top: 1rem;
+}
+
 .add-movie-btn {
     cursor: pointer;
     padding: 0.8rem 1.3rem;
     color: white;
-}
-
-.add-movie-btn:hover {
-    background-color: black;
 }
