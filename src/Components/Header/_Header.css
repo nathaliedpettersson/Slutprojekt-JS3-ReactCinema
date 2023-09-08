@@ -3,6 +3,14 @@
     height: 80px;
 }
 
+.header-template h1 {
+    display: inline;
+    color: white;
+    position: absolute; 
+    left: 10px;
+    text-transform: uppercase;
+}
+
 .navbar {
     float: right;
     margin: 1rem 1rem;
