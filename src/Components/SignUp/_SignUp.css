@@ -16,6 +16,7 @@ input {
     margin: 0.2rem;
     background-color: #5C8374;
     border: none;
+    border-radius: 5px;
 }
 
 ::placeholder {

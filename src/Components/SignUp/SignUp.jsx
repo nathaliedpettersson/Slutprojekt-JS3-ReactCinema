@@ -54,7 +54,7 @@ export default class SignUp extends React.Component {
   render() {
     return (
       <div className="form-container">
-        <h3 className="form-header">New here? Sign up and join the cinema!</h3>
+        <h3 className="form-header">New here? Sign up and start adding movies to your profile!</h3>
         <form onSubmit={this.handleOnSubmit}>
           <input
             type="email"

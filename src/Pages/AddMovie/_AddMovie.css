@@ -9,11 +9,12 @@
 .add-movie-container {
     display: flex;
     justify-content: center;
-    border: 2px solid white;
+    background-color: red;
     border-radius: 5px;
-    width: 300px;
-    height: 300px;
-    margin-top: 5rem;
+    width: 320px;
+    height: 320px;
+    margin-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 form {
@@ -21,7 +22,12 @@ form {
 }
 
 .add-movie-input {
+    background-color: #4C4E52;
     padding: 0.5rem 1rem;
+}
+
+::placeholder {
+    color: white;
 }
 
 .add-movie-input:first-child {
@@ -31,5 +37,6 @@ form {
 .add-movie-btn {
     cursor: pointer;
     padding: 0.8rem 1.3rem;
-    color: white;
+    background-color: white;
+    color: black;
 }
