@@ -11,3 +11,9 @@
     width: 25vw;
     height: 45vh;
 }
+
+@media screen and (max-width: 425px) {
+    .movieitem-img {
+        width: 40vw;
+    }
+}

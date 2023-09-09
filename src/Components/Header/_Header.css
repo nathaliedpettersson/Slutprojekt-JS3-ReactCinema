@@ -27,3 +27,11 @@
 .navbar:hover {
     border: 1px solid white;
 }
+
+@media screen and (max-width: 425px) {
+    .header-template h1 {
+        font-size: 1.2rem;
+        top: 9px;
+        left: 20px;
+    }
+}

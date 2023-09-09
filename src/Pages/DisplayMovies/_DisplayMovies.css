@@ -55,3 +55,15 @@ li {
     background-color: red;
     border: none;
 }
+
+@media screen and (max-width: 425px) {
+    li {
+        margin: 1rem 0rem;
+        padding: 0;
+        width: 200px;
+    }
+
+    .movies-img {
+        width: 25vw;
+    }
+}

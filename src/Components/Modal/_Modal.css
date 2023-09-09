@@ -23,3 +23,10 @@
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 425px) {
+    .modal {
+        width: 20rem;
+        left:calc(50% - 11rem);
+    }
+}
+

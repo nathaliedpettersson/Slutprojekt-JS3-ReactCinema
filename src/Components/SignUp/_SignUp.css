@@ -39,3 +39,14 @@ input[type=text]:focus {
     background-color: white;
     color: black;
 }
+
+@media screen and (max-width: 425px) {
+    .form-container {
+        margin: 0;
+    }
+
+    .submit-btn {
+        margin-top: 0.7rem;
+        color: black;
+    }
+}

@@ -21,22 +21,24 @@ body {
     text-align: center;
     animation: 3s anim-flipX ease infinite;
 }
-  
+
 @keyframes anim-flipX {
     0% {
-      opacity: 0;
-      transform: rotateX(90deg);
+        opacity: 0;
+        transform: rotateX(90deg);
     }
+
     50% {
-      opacity: 1;
-      transform: rotateX(360deg);
+        opacity: 1;
+        transform: rotateX(360deg);
     }
+
     100% {
-      opacity: 1;
-      transform: rotateX(360deg);
+        opacity: 1;
+        transform: rotateX(360deg);
     }
-  }
-  
+}
+
 
 .btn-wrapper {
     margin: 0 33%;
@@ -63,5 +65,17 @@ body {
 
 .movies-img-app {
     width: 15vw;
-    height: 20vh;
+    height: 25vh;
+}
+
+@media screen and (max-width: 425px) {
+
+    .display-movie-app-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .movies-img-app {
+        width: 30vw;
+    }
 }
