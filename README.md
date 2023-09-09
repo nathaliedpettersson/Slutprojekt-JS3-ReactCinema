@@ -1,8 +1,8 @@
 ## Inlämningsuppgift3-ReactCinema
 
-This is a school project where the assignment was to create a "Movie App" where a user can register, log in and then add movies in their accounts. If you are logged in, you should be able to delete your own added movies. 
+This is a school project where the assignment was to create a "Movie App" where users can register, log in, and add movies to their accounts. If logged in, you should be able to delete your added movies. 
 
-Project is developed in React and JavaScript and the following is implemented: 
+The project is developed in React and JavaScript and the following is implemented: 
 
 - Class Component with State
 - Stateless function component with Hooks
@@ -11,7 +11,3 @@ Project is developed in React and JavaScript and the following is implemented:
 - LocalStorage
 - Props
 - Events
-
-### Left to do:
-
-- Improve styling as functionality was prioritized when creating and handing in project for school
