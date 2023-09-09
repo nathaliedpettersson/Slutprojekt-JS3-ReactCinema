@@ -5,10 +5,14 @@
 
 .header-template h1 {
     display: inline;
-    color: white;
     position: absolute; 
     left: 10px;
     text-transform: uppercase;
+    background-image: url("https://images.unsplash.com/photo-1552638474-c3fef4042a5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjI2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=800&q=60");
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .navbar {
